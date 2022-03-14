@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<title>Counter</title>
+</head>
+<body>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <h1>Counter that counts visit! You have visited this page {{session["count"]}} times </h1>
+
+        <form action="/count" method="post">
+            <button type="submit" class="btn btn-primary" name="alter" value="add">Add 2 visits!</button>
+            <button type="submit" class="btn btn-danger"name="alter" value="reset">Back to 1</button>
+        </form>
+    </div>
+</body>
+</html>
